@@ -12,7 +12,6 @@
 - `flush privileges;`
 - `exit`
 
-
 ### Setting up Django
 
 - `sudo pip install virtualenv`
@@ -23,6 +22,23 @@
 - `pip install django-tellme`
 - `pip install Pillow`
 
+### Setting up the admin account to add and remove roles
+- `cd OrderNow`
+- `python manage.py createsuperuser`
+
+Enter your desired username and press enter.
+- `Username: admin` 
+
+You will then be prompted for your desired email address:
+- `Email address: admin@example.com`
+
+The final step is to enter your password
+```
+Password: **********
+Password (again): *********
+Superuser created successfully.
+```
+Once the application is running head to `localhost:8000/admin` for the admin dashboard
 ### Running the project
 
 - `cd OrderNow`
