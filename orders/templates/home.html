@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block body %}
+ 
+<div class="card border-primary" style="width:400px" >
+  <div class="card-body">
+    <h4 class="card-title">Customer</h4>
+    <a class = "btn btn-primary" role = "button" href = "{% url 'customer_signup' %}">Signup</a>
+	  <a class = "btn btn-primary" role = "button" href = "{% url 'customer_login' %}">Login</a>
+  </div>
+</div>
+<br>
+<div class="card border-primary" style="width:400px" >
+  <div class="card-body">
+    <h4 class="card-title">Owner</h4>`
+    <a class = "btn btn-primary" role = "button" href = "{% url 'owner_signup' %}">Signup</a>
+	  <a class = "btn btn-primary" role = "button" href = "{% url 'owner_login' %}">Login</a>
+  </div>
+</div>
+<br>
+<div class="card border-primary" style="width:400px" >
+  <div class="card-body">
+    <h4 class="card-title">Manager</h4>
+	  <a class = "btn btn-primary" role = "button" href = "{% url 'manager_login' %}">Login</a>
+  </div>
+</div>
+{% endblock %}
